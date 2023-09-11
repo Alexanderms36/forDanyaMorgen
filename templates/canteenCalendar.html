@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+  <! всё, что в head не показывается на странице. всю хуйню в body пиши(кнопочки, текст и тд) -->
+  <title>School App</title>
+  <! ниже строка подрубает css к странице -->
+  <link rel="stylesheet" type="text/css" href="static/css/canteenCalendarStyle.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <! ниже хуйня подрубает JavaScript -->
+  <script src="static/js/canteenCalendarScript.js" defer></script>
+  <! тут бля шрифты и значки всякие качаются. надо будет их на сайт как-то предзагрузить -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" />
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body>
+  <div class="backknop" id ="goBack">Вернуться на главную &#128512</div>
+  <div class="kiter">
+    <img src="https://i0.wp.com/www.printmag.com/wp-content/uploads/2021/02/4cbe8d_f1ed2800a49649848102c68fc5a66e53mv2.gif?resize=476%2C280&ssl=1"></img>
+  </div>
+  <div class="wrapper">
+    <! во тут ниже хуйня хэдер ёпта. надо всё его содержимое в обычный div засунуть. в нём разметка переда календаря -->
+    <header>
+      <p class="emoMonth" id="emojiMonth">:/</p>
+      <p class="current-date">Загрузка...</p>
+      <div class="icons">
+        <span id="prev" class="material-symbols-outlined"> arrow_back </span>
+        <span id="next" class="material-symbols-outlined"> arrow_forward </span>
+        <div class="calendar">
+          <ul class="weeks">
+            <li>Пн</li>
+            <li>Вт</li>
+            <li>Cp</li>
+            <li>Чт</li>
+            <li>Пт</li>
+            <li>Cб</li>
+            <li>Bc</li>
+          </ul>
+          <ul class="days"></ul>
+        </div>
+      </div>
+    </header>
+    <! жопа календаря -->
+	<div class="back" id="back">
+		<header>
+			<div class="back-icon">
+				<span id="back-to-the-front"  class="material-symbols-outlined"> arrow_back </span>
+				<p class = "current-date-bs" id="currDateBS">Загрузка...</p>
+			</div>
+		</header>
+		<div class="backline">
+			<div id="reasonTextFieldWrapper">
+			  <textarea rows="4" id="reasonTextField" placeholder="Добавьте причину отсутствия" cols="50"></textarea>
+			</div>
+			<div id="buttonsWrapper">
+			  <span class="material-symbols-sharp" id="backDone">done</span>
+			  <span class="material-symbols-sharp" id="backCancel">close</span>
+			</div>
+		  </div>
+	  </div>
+  </div>
+</body>
+</html>

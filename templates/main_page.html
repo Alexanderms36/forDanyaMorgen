@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная страница</title>
+    <link rel="stylesheet" type="text/css" href="static/css/styleMain_page.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="static/js/mainpageScript.js" defer></script>
+
+    
+</head>
+<body>
+    <div class="container">
+        <! в aside находится всё что сбоку-->
+        <aside>
+          <nav>
+            <ul>
+              <li id="main"><a href="">Главная</a></li>
+                <! хуйня в {% %} это ссылки на бэк. на них хуй забей. в href можешь писать чисто "#"  -->
+              <li><a href="{% url 'lk_page' %}">👤Личный кабинет</a></li>
+
+              <li>
+                <a href="{% url 'canteen_page' %}">📆Календарь</a>
+              </li>
+              <li><a href="{% url 'canteenTimetable' %}">🍰Меню школьной столовой</a></li>
+              <li><a href="#">📝Расписание</a></li>
+              <li><a href="#">🏆Стена c достижениями</a></li>
+              <li><a href="#">📔Подготовка к ЕГЭ и ОГЭ</a></li>
+              <li><a href="#">📧О нас</a></li>
+            </ul>
+          </nav>
+        </aside>
+        <main>
+          <header>
+            <h1>hello, world!</h1>
+            <p>yeeeeeeee</p>
+          </header>
+            <! тут прост пикчи с нянкэтом. чем-то надо было забить. туда потом ленту новостей запихнуть можно-->
+          <section class="services">
+            <div class="service">
+                <img src="https://i0.wp.com/www.printmag.com/wp-content/uploads/2021/02/4cbe8d_f1ed2800a49649848102c68fc5a66e53mv2.gif?resize=476%2C280&ssl=1"></img>
+            </div>
+            <img src="https://i0.wp.com/www.printmag.com/wp-content/uploads/2021/02/4cbe8d_f1ed2800a49649848102c68fc5a66e53mv2.gif?resize=476%2C280&ssl=1"></img>
+            
+            <img src="https://i0.wp.com/www.printmag.com/wp-content/uploads/2021/02/4cbe8d_f1ed2800a49649848102c68fc5a66e53mv2.gif?resize=476%2C280&ssl=1"></img>
+
+            <img src="https://i0.wp.com/www.printmag.com/wp-content/uploads/2021/02/4cbe8d_f1ed2800a49649848102c68fc5a66e53mv2.gif?resize=476%2C280&ssl=1"></img>
+
+            <img src="https://i0.wp.com/www.printmag.com/wp-content/uploads/2021/02/4cbe8d_f1ed2800a49649848102c68fc5a66e53mv2.gif?resize=476%2C280&ssl=1"></img>
+
+            <img src="https://i0.wp.com/www.printmag.com/wp-content/uploads/2021/02/4cbe8d_f1ed2800a49649848102c68fc5a66e53mv2.gif?resize=476%2C280&ssl=1"></img>
+
+            <img src="https://i0.wp.com/www.printmag.com/wp-content/uploads/2021/02/4cbe8d_f1ed2800a49649848102c68fc5a66e53mv2.gif?resize=476%2C280&ssl=1"></img>
+        </main>
+      </div>
+    
+      <footer>
+        <p>&copy; Тут в футере чо-нибудь напишем ещё</p>
+      </footer>
+    
+</body>
+</html>
